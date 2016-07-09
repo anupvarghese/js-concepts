@@ -31,3 +31,18 @@ const es6ClassPatternCar2 = new objectPattern.es6ClassPattern('Honda', 'City', '
 es6ClassPatternCar1.details();
 es6ClassPatternCar2.details();
 console.log('Is details an own property? :', dynamicPrototypePatternCar2.hasOwnProperty('details'))
+
+console.log('******** Call example **********')
+const callExample  = require('./call_apply_bind').callExample;
+callExample(10, 20, 30);
+
+console.log('******** Apply example **********')
+const applyExample  = require('./call_apply_bind').applyExample;
+applyExample(10, 20, 30);
+
+console.log('******** Bind example **********')
+const bindExample  = require('./call_apply_bind').bindExample;
+// make binding first
+const bound = bindExample();
+// passparams just like normal function call after binding
+console.log(bound(10, 20, 30));
