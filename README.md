@@ -2,3 +2,4 @@
 
 Following topics are covered
 - Object creation patterns
+- Call apply and bind

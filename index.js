@@ -46,3 +46,14 @@ const bindExample  = require('./call_apply_bind').bindExample;
 const bound = bindExample();
 // passparams just like normal function call after binding
 console.log(bound(10, 20, 30));
+
+console.log('******** Closure examples **********')
+const closureExample = require('./closures');
+
+const sashi = closureExample.myName('sashi');
+const suresh = closureExample.myName("suresh");
+// the concept here is that, it preserves the property 
+// it allows us to create any number of objects and preseve 
+// the property properly
+console.log(sashi('soman'));
+console.log(suresh('annan'))
