@@ -25,3 +25,9 @@ dynamicPrototypePatternCar1.details();
 dynamicPrototypePatternCar2.details();
 console.log('Is details an own property? :', dynamicPrototypePatternCar2.hasOwnProperty('details'))
 
+console.log('******** ES6 Class Pattern **********')
+const es6ClassPatternCar1 = new objectPattern.es6ClassPattern('Honda', 'City', 'Black');
+const es6ClassPatternCar2 = new objectPattern.es6ClassPattern('Honda', 'City', 'Black');
+es6ClassPatternCar1.details();
+es6ClassPatternCar2.details();
+console.log('Is details an own property? :', dynamicPrototypePatternCar2.hasOwnProperty('details'))

@@ -40,4 +40,20 @@ const dynamicPrototypePattern = function(name, model, color) {
         }
     }
 }
- module.exports.dynamicPrototypePattern = dynamicPrototypePattern;
+module.exports.dynamicPrototypePattern = dynamicPrototypePattern;
+
+// ES6 Classes
+
+const es6ClassPattern = class Car {
+    constructor(name, model, color) {
+        this.name = name;
+        this.model = model;
+        this.color = color;
+    }
+
+    details() {
+        console.log(`Car name: ${this.name} Model: ${this.model} Color: ${this.color}`)
+    }
+}
+
+module.exports.es6ClassPattern = es6ClassPattern
